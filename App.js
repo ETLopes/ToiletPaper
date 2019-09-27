@@ -60,6 +60,8 @@ class App extends Component {
               this.setState({size: itemValue})
             }
             style={styles.pickerStyle}>
+            <Picker.Item label="Escolha um tamanho" value={0} />
+
             {volumes.map((volume, index) => (
               <Picker.Item
                 key={index}
